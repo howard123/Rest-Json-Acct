@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+
+    <persistence-unit name="com.howard.api.jpa">
+        <description>
+            Hibernate using JPA
+        </description>
+
+        <class>hibernate.Account</class>
+      
+
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:upgrade" />
+            <property name="javax.persistence.jdbc.user" value="hsuksanti" />
+            <property name="javax.persistence.jdbc.password" value="madonna1" />
+
+            <property name="hibernate.show_sql" value="true" />
+        <!--      <property name="hibernate.hbm2ddl.auto" value="create" /> -->
+        </properties>
+
+    </persistence-unit>
+
+</persistence>
