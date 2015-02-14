@@ -24,12 +24,12 @@ public class GreetingController {
     }
     
 //    @RequestMapping("/account")
-//    public hello.Account account(@RequestParam(value="emp_id", defaultValue= "2" ) long emp_num){
+//    public com.jack.obj.Account account(@RequestParam(value="emp_id", defaultValue= "2" ) long emp_num){
 //    	
 //    	//Query database for the account number and routing number
 //    	//long emp_num = 1;
 //    	
-//    	List<hello.Account> acts = new ArrayList<hello.Account>();
+//    	List<com.jack.obj.Account> acts = new ArrayList<com.jack.obj.Account>();
 //    	
 //    	
 //    	AccountFinding af = new AccountFinding();
@@ -38,7 +38,7 @@ public class GreetingController {
 //    	
 //    	for (Account b : accts ){
 //    		
-//    		acts.add(new hello.Account(b.getAcct_num(),b.getRoute_num()));
+//    		acts.add(new com.jack.obj.Account(b.getAcct_num(),b.getRoute_num()));
 //        	
 //    	}
 //    	
