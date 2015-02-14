@@ -1,4 +1,4 @@
-package hello;
+package com.jack.obj;
 
 
 import hibernate.AccountFinding;
@@ -23,25 +23,25 @@ public class GreetingController {
                             String.format(template, name));
     }
     
-    @RequestMapping("/account")
-    public List<hello.Account> account(@RequestParam(value="emp_id", defaultValue= "2" ) long emp_num){
-    	
-    	//Query database for the account number and routing number
-    	//long emp_num = 1;
-    	
-    	List<hello.Account> acts = new ArrayList<hello.Account>();
-    	
-    	
-    	AccountFinding af = new AccountFinding();
-    	af.init();
-    	List<Account> accts = af.acctFetching(emp_num);
-    	
-    	for (Account b : accts ){
-    		
-    		acts.add(new hello.Account(b.getAcct_num(),b.getRoute_num()));
-        	
-    	}
-    	
-    	return acts;
-    }
+//    @RequestMapping("/account")
+//    public hello.Account account(@RequestParam(value="emp_id", defaultValue= "2" ) long emp_num){
+//    	
+//    	//Query database for the account number and routing number
+//    	//long emp_num = 1;
+//    	
+//    	List<hello.Account> acts = new ArrayList<hello.Account>();
+//    	
+//    	
+//    	AccountFinding af = new AccountFinding();
+//    	af.init();
+//    	List<Account> accts = af.acctFetching(emp_num);
+//    	
+//    	for (Account b : accts ){
+//    		
+//    		acts.add(new hello.Account(b.getAcct_num(),b.getRoute_num()));
+//        	
+//    	}
+//    	
+//    	return acts.get(0);
+//    }
 }

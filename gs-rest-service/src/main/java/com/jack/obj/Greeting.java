@@ -1,4 +1,4 @@
-package hello;
+package com.jack.obj;
 
 public class Greeting {
 
