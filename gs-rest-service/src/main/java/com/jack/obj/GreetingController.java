@@ -22,22 +22,12 @@ public class GreetingController {
     private static final String template = "Hello, %s!";
     private final AtomicLong counter = new AtomicLong();
     
-    
-    @RequestMapping("/greeting")
-    public ModelAndView  greeting(HttpServletRequest request,
-            HttpServletResponse response) throws Exception {
-    	
-    	ModelAndView model = new ModelAndView("Greeting");
-        model.addObject("msg","Howard");
-    	
-        return model;
-    }
 
-//    @RequestMapping("/greeting")
-//    public Greeting greeting(@RequestParam(value="name", defaultValue="World") String name) {
-//        return new Greeting(counter.incrementAndGet(),
-//                            String.format(template, name));
-//    }
+    @RequestMapping("/greeting")
+    public Greeting greeting(@RequestParam(value="name", defaultValue="World") String name) {
+        return new Greeting(counter.incrementAndGet(),
+                            String.format(template, name));
+    }
     
 //    @RequestMapping("/account")
 //    public com.jack.obj.Account account(@RequestParam(value="emp_id", defaultValue= "2" ) long emp_num){
