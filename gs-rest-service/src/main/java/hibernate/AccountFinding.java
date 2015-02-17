@@ -17,15 +17,15 @@ public class AccountFinding {
 		 em = emf.createEntityManager();
     }
     
-//	public static void main(String[] args){
+	public static void main(String[] args){
 		
-//		AccountFinding af = new AccountFinding();
-//		af.init();
+		AccountFinding af = new AccountFinding();
+		af.init();
 	        // Persist all entities
 	       // createTransactionalEntityManager();
-//	        System.out.println("Fetching account... " + af.acctFetching(new Long (1)));
+	        System.out.println("Fetching account... " + af.acctFetching(new Long (1)));
 	       // closeTransactionalEntityManager();
-//	}
+	}
 	
 	
       public  List<Account> acctFetching(long emp_id){
