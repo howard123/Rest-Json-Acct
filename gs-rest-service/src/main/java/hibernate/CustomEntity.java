@@ -6,6 +6,9 @@ import javax.persistence.Persistence;
 
 public class CustomEntity {
 
+	public CustomEntity(){
+		
+	}
 	 public  void init(){
 	    	emf = Persistence.createEntityManagerFactory("com.howard.api.jpa");
 			 em = emf.createEntityManager();

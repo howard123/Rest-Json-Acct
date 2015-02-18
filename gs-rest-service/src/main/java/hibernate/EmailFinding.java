@@ -25,12 +25,12 @@ public class EmailFinding extends CustomEntity {
 	//long emp_id = 1;
 	
 	custs = em.createNamedQuery("Customer.findById")
-			.setParameter("emp_id", emp_id).getResultList();
+			.setParameter("cust_id", emp_id).getResultList();
 	
 	for (Customer a : custs){
 	
 		System.out.println("Acct_num : "+a.getFirst_name());
-		System.out.println("Route_num : "+a.getEmail_id());
+		System.out.println("Route_num : "+a.getEmail_address());
 	}
 	
 	return custs;

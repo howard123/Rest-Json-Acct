@@ -21,7 +21,7 @@ public class Customer {
 	private String last_name;
 	
 	@Column
-	private String email_id;
+	private String email_address;
 	
 	
 	
@@ -49,12 +49,12 @@ public class Customer {
 		this.last_name = last_name;
 	}
 
-	public String getEmail_id() {
-		return email_id;
+	public String getEmail_address() {
+		return email_address;
 	}
 
-	public void setEmail_id(String email_id) {
-		this.email_id = email_id;
+	public void setEmail_address(String email_id) {
+		this.email_address = email_id;
 	}
 
 	
